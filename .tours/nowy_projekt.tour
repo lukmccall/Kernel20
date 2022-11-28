@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "nowy_projekt",
+  "steps": [
+    {
+      "file": "app.json",
+      "description": "### App.json\n> The Expo config (app.json, app.config.js, app.config.ts) is used for configuring how a project loads in Expo Go, Expo Prebuild generation, and the OTA update manifest. You can think of this as an index.html but for React Native apps.\n\nhttps://docs.expo.dev/workflow/configuration/",
+      "line": 1
+    },
+    {
+      "file": "package.json",
+      "description": "### Package.json\n\nPlik package.json jest głównym miejscem konfiguracji projektu, w którym opisujemy sposób interakcji z aplikacją oraz sposób jej uruchamiania.\nTo właśnie plik package.json umożliwia npm uruchamianie projektu, skryptów oraz instalowanie zależności.\n\n",
+      "line": 1
+    },
+    {
+      "file": "App.js",
+      "description": "### \"Main\" projektu\n\nTutaj znajduje się komponent, od którego `React Native` rozpoczyna rysowanie naszej aplikacji.",
+      "line": 4
+    },
+    {
+      "file": "App.js",
+      "description": "Aby uruchomić aplikację wykonaj:\n\n>> yarn start\n\n----\n\nTeraz możesz dowolnie edytować ten fragment kodu 😉\n\n``` jsx\n<Text>Cześć AGH 👋</Text>\n```",
+      "line": 8,
+      "selection": {
+        "start": {
+          "line": 7,
+          "character": 7
+        },
+        "end": {
+          "line": 7,
+          "character": 64
+        }
+      }
+    },
+    {
+      "file": "App.js",
+      "description": "### Style\n\nTutaj znajdują się style używane w tym pliku",
+      "line": 20
+    }
+  ]
+}
