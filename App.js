@@ -11,7 +11,7 @@ export default function App() {
 
   const resetBoard = () => {
     setNewBoard(Array(9).fill(null));
-    setCurrentTurn("o");
+    setCurrentTurn("x");
   };
 
   const makeMove = (row, column) => {
@@ -23,16 +23,6 @@ export default function App() {
 
     setCurrentTurn(currentTurn === "x" ? "o" : "x");
     setNewBoard([...currentBoard]);
-
-    const winner = checkWinner(currentBoard);
-    if (winner !== null) {
-      Alert.alert("Game ended", `Winner: ${winner.toUpperCase()}`, [
-        {
-          text: "New Game",
-          onPress: resetBoard,
-        },
-      ]);
-    }
   };
 
   const drawRow = (row) => {
@@ -67,8 +57,6 @@ export default function App() {
             );
           })}
       </View>
-
-      <Button style={{ marginTop: 20 }} title="Reset" onPress={resetBoard} />
     </View>
   );
 }
